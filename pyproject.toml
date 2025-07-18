@@ -1,0 +1,20 @@
+[project]
+name = "tabs-test"
+version = "0.5.0"
+description = "GemTrack"
+dependencies = ["flet>=0.28.2"]
+requires-python = ">=3.9"
+
+[build-system]
+requires = ["flet"]
+build-backend = "flet"
+
+[tool.flet]
+app_path = "main2.py"
+app_name = "GemTrack"
+app_description = "GemTrack"
+
+[tool.flet.android]
+package = "com.test.tabs"
+permissions = ["android.permission.INTERNET"]
+adaptive_icon_background = "#000000"
